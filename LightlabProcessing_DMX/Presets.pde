@@ -8,22 +8,33 @@ PresetManager pm = new PresetManager("presets.xml");
 
 final JFileChooser fc        =  new JFileChooser();
 
-//if key is pressed
-void keyPressed(KeyEvent e){
+//if key is pressed, check for save, load or remove
+Boolean ctrlPressed = false;
+void keyPressed(){
   // CTRL + ...
-  if ((e.getModifiers() & KeyEvent.CTRL_MASK) != 0) {
-    //CTRL+L to load a preset
-    if (e.getKeyCode() == KeyEvent.VK_L){
-      loadPresetPane();
-    }
-    //CTRL+S to save a preset
-    else if (e.getKeyCode() == KeyEvent.VK_S){
-      saveNewPresetPane();
-    } 
-    //CTRL+R to remove a preset
-    else if (e.getKeyCode() == KeyEvent.VK_R){
-      removePresetPane();
-    }
+  if(keyCode == KeyEvent.VK_CONTROL) {
+    ctrlPressed = true;
+  }
+    
+  if (ctrlPressed) {
+   //CTRL+L to load a preset
+   if (keyCode == KeyEvent.VK_L){
+     loadPresetPane();
+   }
+   //CTRL+S to save a preset
+   else if (keyCode == KeyEvent.VK_S){
+     saveNewPresetPane();
+   } 
+   //CTRL+R to remove a preset
+   else if (keyCode == KeyEvent.VK_R){
+     removePresetPane();
+   }
+  }
+}
+// check if control is pressed
+void keyReleased() {
+  if(keyCode == KeyEvent.CTRL_MASK) {
+    ctrlPressed = false;
   }
 }
 
@@ -511,4 +522,3 @@ public class PresetManager{
   }
   
 }
-

@@ -27,7 +27,7 @@ void setup()
   size(200, 200);
   
   //open serial communication
-  String portName = Serial.list()[1];           //choose the right portNumber for your DMX arduino
+  String portName = Serial.list()[0];           //choose the right portNumber for your DMX arduino
   myPort = new Serial(this, portName, 115200);  //set BAUD rate equal to BAUD rate in Arduino sketch
  
  //initialize the lamps in the lightlab:
@@ -43,32 +43,32 @@ void setup()
 void draw() {
   int ct = 2900;
   
-  for (int i=0;i < rgbSpots.size() ; i++){
-    rgbSpots.get(i).setCTinKelvin(ct);
-    rgbSpots.get(i).setBrightness(255);
-  }
-  for (int i=0;i < ctSpots.size() ; i++){
-    ctSpots.get(i).setCTinKelvin(ct);
-  }
-  for (int i=0;i < cameleons.size() ; i++){
-    cameleons.get(i).setCTinKelvin(ct);
-    cameleons.get(i).setBrightness(220);
-  }
-  for (int i=0;i < ctLedWashers.size() ; i++){
-    ctLedWashers.get(i).setCTinKelvin(ct);
-    ctLedWashers.get(i).setBrightness(255);
-  }
-  for (int i=0;i < sunStrips.size() ; i++){
-    //sunStrips.get(i).setCTinKelvin(ct);
-  }
+  //for (int i=0;i < rgbSpots.size() ; i++){
+  //  rgbSpots.get(i).setCTinKelvin(ct);
+  //  rgbSpots.get(i).setBrightness(255);
+  //}
+  //for (int i=0;i < ctSpots.size() ; i++){
+  //  ctSpots.get(i).setCTinKelvin(ct);
+  //}
+  //for (int i=0;i < cameleons.size() ; i++){
+  //  cameleons.get(i).setCTinKelvin(ct);
+  //  cameleons.get(i).setBrightness(220);
+  //}
+  //for (int i=0;i < ctLedWashers.size() ; i++){
+  //  ctLedWashers.get(i).setCTinKelvin(ct);
+  //  ctLedWashers.get(i).setBrightness(255);
+  //}
+  //for (int i=0;i < sunStrips.size() ; i++){
+  //  //sunStrips.get(i).setCTinKelvin(ct);
+  //}
   
   //update every lamp in the lightlab (needed for tweening)
-  //updateAll();
+  updateAll();
 }
 
 //calls the update function for every lamp in the lab, to update tweening
 void updateAll(){
-  traceln("update");
+  //traceln("update");
   for (int i=0;i < rgbSpots.size() ; i++){
     rgbSpots.get(i).update();
   }
@@ -101,33 +101,34 @@ void mouseClicked(){
   if (mouseOverRect() == true) {  // If mouse is over square,
     fill(204);                    // change color and
     
-    for (int i=0;i < rgbSpots.size() ; i++){
-      rgbSpots.get(i).tweenBrightness(int(random(0,255)), 2000);
-      rgbSpots.get(i).tweenRGB(int(random(0,255)),int(random(0,255)),int(random(0,255)), 4000);
-    }
-    for (int i=0;i < ctSpots.size() ; i++){
-      ctSpots.get(i).tweenCool(int(random(0,255)), 4000);
-    }
+    //for (int i=0;i < rgbSpots.size() ; i++){
+    //  rgbSpots.get(i).tweenBrightness(int(random(0,255)), 2000);
+    //  rgbSpots.get(i).tweenRGB(int(random(0,255)),int(random(0,255)),int(random(0,255)), 4000);
+    //}
+    //for (int i=0;i < ctSpots.size() ; i++){
+    //  ctSpots.get(i).tweenCool(int(random(0,255)), 4000);
+    //}
     
     for (int i=0;i < cameleons.size() ; i++){
-      cameleons.get(i).tweenRGB(int(random(0,255)),int(random(0,255)),int(random(0,255)), 3000);
+     cameleons.get(i).setRGB(int(random(0,255)),int(random(0,255)),int(random(0,255)));
+     cameleons.get(i).setBrightness(255);
     }
-    for (int i=0;i < ctLedWashers.size() ; i++){
-      ctLedWashers.get(i).tweenBrightness(int(random(0,255)), 1500);
-      ctLedWashers.get(i).tweenCool(int(random(0,255)), 4000);
-    }
-    for (int i=0;i < sunStrips.size() ; i++){
-      for(int j=0; j<10; j++){
-        sunStrips.get(i).startBreathing(0, 255, int(random(500,5000)),j);
-      }
-    }
-    for (int i=0;i < narrowSpots.size() ; i++){
-      narrowSpots.get(i).tweenBrightness(int(random(0,255)), 4000);
-    }
-    for (int i=0;i < strobes.size() ; i++){
-      strobes.get(i).startBreathing(0, 255, 500,4);
-      strobes.get(i).startBreathing(0, 255, 500,2);
-    }
+    //for (int i=0;i < ctLedWashers.size() ; i++){
+    //  ctLedWashers.get(i).tweenBrightness(int(random(0,255)), 1500);
+    //  ctLedWashers.get(i).tweenCool(int(random(0,255)), 4000);
+    //}
+    //for (int i=0;i < sunStrips.size() ; i++){
+    //  for(int j=0; j<10; j++){
+    //    sunStrips.get(i).startBreathing(0, 255, int(random(500,5000)),j);
+    //  }
+    //}
+    //for (int i=0;i < narrowSpots.size() ; i++){
+    //  narrowSpots.get(i).tweenBrightness(int(random(0,255)), 4000);
+    //}
+    //for (int i=0;i < strobes.size() ; i++){
+    //  strobes.get(i).startBreathing(0, 255, 500,4);
+    //  strobes.get(i).startBreathing(0, 255, 500,2);
+    //}
     
     blackout(false);
   } 
