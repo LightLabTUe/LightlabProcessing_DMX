@@ -9,11 +9,11 @@ public class NarrowSpot extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 4){
-      functions = new int[4];
-      functions[0] = BRIGHTNESS;
-      functions[1] = COLORS;
-      functions[2] = STROBE;
-      //functions[3] = FUNCTION;
+      channels = new int[4];
+      channels[0] = BRIGHTNESS;
+      channels[1] = COLORS;
+      channels[2] = STROBE;
+      //channels[3] = FUNCTION;
       
       currentValues = new int[4];
       tweeningToValue = new int[4];
@@ -32,8 +32,8 @@ public class NarrowSpot extends Lamp{
   }
   
   public void setBrightness(int bri){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==BRIGHTNESS){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==BRIGHTNESS){
         writeDmx(i, bri);
       }
     }

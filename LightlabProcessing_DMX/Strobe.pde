@@ -8,13 +8,13 @@ public class Strobe extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 6){
-      functions = new int[6];
-      functions[0] = BRIGHTNESS;    //bottomright
-      functions[1] = BRIGHTNESS;    //bottomleft
-      functions[2] = BRIGHTNESS;    //upperright
-      functions[3] = BRIGHTNESS;    //upperleft
-      functions[4] = BRIGHTNESS;    //master
-      functions[5] = STROBE;
+      channels = new int[6];
+      channels[0] = BRIGHTNESS;    //bottomright
+      channels[1] = BRIGHTNESS;    //bottomleft
+      channels[2] = BRIGHTNESS;    //upperright
+      channels[3] = BRIGHTNESS;    //upperleft
+      channels[4] = BRIGHTNESS;    //master
+      channels[5] = STROBE;
       
       currentValues = new int[6];
       tweeningToValue = new int[6];
@@ -36,27 +36,27 @@ public class Strobe extends Lamp{
   //brightness per lamp if a lamp index is send along. 
   //If no index is send, brightness is adjusted for quarters in the strobe equally (see Lamp)
   public void setBrightness(int bri, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       writeDmx(index, bri);
     }
   }
   public void adjustBrightness(int deltaBri, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
        writeDmx(index, (currentValues[index]+deltaBri));
     }
   }
   public int getBrightness(int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       return currentValues[index];
     }return 0;
   }
   public void tweenBrightness(int bri, int time, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       setTween(index, bri, time);
     }
   }
   public void startBreathing(int min, int max, int time, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       minBreathingValue[index] = min;
       maxBreathingValue[index] = max;
       breathingDelta[index] = time/(max - min);

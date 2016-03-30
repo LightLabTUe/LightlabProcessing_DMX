@@ -10,11 +10,11 @@ public class CTSpot extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 4){
-      functions = new int[4];
-      functions[0] = COOL;
-      functions[1] = WARM;
-      functions[2] = STROBE;
-      functions[3] = MACRO;
+      channels = new int[4];
+      channels[0] = COOL;
+      channels[1] = WARM;
+      channels[2] = STROBE;
+      channels[3] = MACRO;
       
       currentValues = new int[4];
       tweeningToValue = new int[4];
@@ -33,31 +33,31 @@ public class CTSpot extends Lamp{
   
   //OVERWRITES
   //Brightness & CT do not exist in CT spot
-  //therefore the brightnessfunctions from Lamp are overwritten here for CT spot functionality specific
+  //therefore the brightnesschannels from Lamp are overwritten here for CT spot functionality specific
   public void setBrightness(int bri){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
          writeDmx(i, bri);
-      }else if(functions[i]==WARM){
+      }else if(channels[i]==WARM){
          writeDmx(i, bri);
       }
     }
   }
   public void adjustBrightness(int deltaBri){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
          writeDmx(i, currentValues[i]+deltaBri);
-      }else if(functions[i]==WARM){
+      }else if(channels[i]==WARM){
          writeDmx(i, currentValues[i]+deltaBri);
       }
     }
   }
   public int getBrightness(){
     int averageBri = 0;
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
          averageBri=averageBri+currentValues[i];
-      }else if(functions[i]==WARM){
+      }else if(channels[i]==WARM){
          averageBri=averageBri+currentValues[i];
       }
     }return averageBri;
@@ -65,10 +65,10 @@ public class CTSpot extends Lamp{
   
   //color temperature
   public void adjustCT(int deltaCT){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
          writeDmx(i, (currentValues[i]+deltaCT));
-      }else if(functions[i]==WARM){
+      }else if(channels[i]==WARM){
          writeDmx(i, (currentValues[i]-deltaCT));
       }
     }

@@ -8,12 +8,12 @@ public class Cameleon extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 5){
-      functions = new int[5];
-      functions[0] = RED;
-      functions[1] = GREEN;
-      functions[2] = BLUE;
-      functions[3] = BRIGHTNESS;
-      functions[4] = STROBE;   
+      channels = new int[5];
+      channels[0] = RED;
+      channels[1] = GREEN;
+      channels[2] = BLUE;
+      channels[3] = BRIGHTNESS;
+      channels[4] = STROBE;   
       
       currentValues = new int[5];
       tweeningToValue = new int[5];

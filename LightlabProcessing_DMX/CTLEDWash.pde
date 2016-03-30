@@ -12,13 +12,13 @@ public class CTLEDWash extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 7){
-      functions = new int[6];
-      functions[0] = BRIGHTNESS;
-      functions[1] = COOL;
-      functions[2] = WARM;
-      functions[3] = CT;               //make CT with kelvin parameter value! not 0-255
-      functions[4] = STROBE;
-      //functions[5] = DIMMERSPEED;      //not functional yet.....
+      channels = new int[6];
+      channels[0] = BRIGHTNESS;
+      channels[1] = COOL;
+      channels[2] = WARM;
+      channels[3] = CT;               //make CT with kelvin parameter value! not 0-255
+      channels[4] = STROBE;
+      //channels[5] = DIMMERSPEED;      //not functional yet.....
       
       currentValues = new int[6];
       tweeningToValue = new int[6];

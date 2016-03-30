@@ -9,20 +9,20 @@ public class MovingHead extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 13){
-      functions = new int[13];
-      functions[0] = PANNING;
-      functions[1] = TILTING;
-      //functions[2] = PANNINGFINE;
-      //functions[3] = TILTINGFINE;
-      //functions[4] = SPEED;
-      functions[5] = COLORS;      //same as narrow?
-      functions[6] = STROBE;
-      functions[7] = BRIGHTNESS;
-      //functions[8] = ROTATION;
-      //functions[9] = ROTATIONDIRECTION;
-      //functions[10] = PRISM;
-      //functions[11] = CHANNELFUNCTIONS;
-      //functions[12] = BUILD-INPROGRAMS;
+      channels = new int[13];
+      channels[0] = PANNING;
+      channels[1] = TILTING;
+      //channels[2] = PANNINGFINE;
+      //channels[3] = TILTINGFINE;
+      //channels[4] = SPEED;
+      channels[5] = COLORS;      //same as narrow?
+      channels[6] = STROBE;
+      channels[7] = BRIGHTNESS;
+      //channels[8] = ROTATION;
+      //channels[9] = ROTATIONDIRECTION;
+      //channels[10] = PRISM;
+      //channels[11] = CHANNELchannels;
+      //channels[12] = BUILD-INPROGRAMS;
       
       currentValues = new int[13];
       tweeningToValue = new int[13];
@@ -39,7 +39,7 @@ public class MovingHead extends Lamp{
     }
   }
   
-  //MOVEMENT FUNCTIONS
+  //MOVEMENT channels
   
   //pan (horizontal movement
   public void setPan(int p){
@@ -84,7 +84,7 @@ public class MovingHead extends Lamp{
       writeDmx(6, 5);
     }
   }
-  //color wheel functions
+  //color wheel channels
   public void setColor(String c){
     checkStrobe();
     for (int i=0; i<colors.length-1; i++){
@@ -116,8 +116,8 @@ public class MovingHead extends Lamp{
   }
   
   public void setBrightness(int bri){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==BRIGHTNESS){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==BRIGHTNESS){
         writeDmx(7, bri);
       }
     }

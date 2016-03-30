@@ -1,6 +1,6 @@
 public class Lamp {
   
-  int[] functions;
+  int[] channels;
   int[] currentValues;
   
   //tweening values
@@ -37,11 +37,11 @@ public class Lamp {
   public void blackOut(boolean bO){
     blackout = bO;
     if(bO){
-      for(int i=0; i<functions.length; i++){
+      for(int i=0; i<channels.length; i++){
         writeDontSaveDmx(i, 0);
       }
     }else{
-      for(int i=0; i<functions.length; i++){
+      for(int i=0; i<channels.length; i++){
         writeDontSaveDmx(i, currentValues[i]);
       }
     }
@@ -49,15 +49,15 @@ public class Lamp {
   
   boolean failed = true;
 
-  //RGB FUNCTIONS
+  //RGB channels
   public void setRGB(int r, int g, int b){
     
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==RED){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==RED){
         writeDmx(i, r);
-      }else if(functions[i]==GREEN){
+      }else if(channels[i]==GREEN){
         writeDmx(i, g);
-      }else if(functions[i]==BLUE){
+      }else if(channels[i]==BLUE){
         writeDmx(i, b);
       }
     }
@@ -67,12 +67,12 @@ public class Lamp {
   public void adjustRGB(int deltaR, int deltaG, int deltaB){
     failed = true;
 
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==RED){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==RED){
         writeDmx(i, (currentValues[i]+deltaR));
-      }else if(functions[i]==GREEN){
+      }else if(channels[i]==GREEN){
         writeDmx(i, (currentValues[i]+deltaG));
-      }else if(functions[i]==BLUE){
+      }else if(channels[i]==BLUE){
         writeDmx(i, (currentValues[i]+deltaB));
       }
     }
@@ -81,12 +81,12 @@ public class Lamp {
   }
   public int[] getRGB(){
     int[] rgb = new int[3];
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==RED){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==RED){
         rgb[0] = currentValues[i];
-      }else if(functions[i]==GREEN){
+      }else if(channels[i]==GREEN){
         rgb[1] = currentValues[i];
-      }else if(functions[i]==BLUE){
+      }else if(channels[i]==BLUE){
         rgb[2] = currentValues[i];
       }
     }
@@ -94,12 +94,12 @@ public class Lamp {
     return rgb;
   }
   public void tweenRGB(int r, int g, int b, int time){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==RED){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==RED){
         setTween(i, r, time);  
-      }else if(functions[i]==GREEN){
+      }else if(channels[i]==GREEN){
         setTween(i, g, time);  
-      }else if(functions[i]==BLUE){
+      }else if(channels[i]==BLUE){
         setTween(i, b, time);  
       }
     }
@@ -117,10 +117,10 @@ public class Lamp {
   }
 
   
-  //BRIGHTNESS FUNCTIONS
+  //BRIGHTNESS channels
   public void setBrightness(int bri){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==BRIGHTNESS){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==BRIGHTNESS){
         writeDmx(i, bri);
       }
     }
@@ -129,23 +129,23 @@ public class Lamp {
 
   }
   public void adjustBrightness(int deltaBri){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==BRIGHTNESS){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==BRIGHTNESS){
          writeDmx(i, (currentValues[i]+deltaBri));
       }
     }
     if (failed) error("adjustBrightness");
   }
   public int getBrightness(){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==BRIGHTNESS){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==BRIGHTNESS){
         return currentValues[i];
       }
     }return 0;
   }
   public void tweenBrightness(int bri, int time){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==BRIGHTNESS){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==BRIGHTNESS){
         setTween(i, bri, time);
       }
     }
@@ -154,12 +154,12 @@ public class Lamp {
     startBreathing(0, 255, 4000);
   }
   public void startBreathing(int min, int max, int time){
-    for(int i=0; i<functions.length; i++){
+    for(int i=0; i<channels.length; i++){
       minBreathingValue[i] = min;
       maxBreathingValue[i] = max;
       breathingDelta[i] = time/(max - min);
     
-      if(functions[i]==BRIGHTNESS){
+      if(channels[i]==BRIGHTNESS){
         setTween(i, max, (max-currentValues[i])*breathingDelta[i]);
         breathing[i] = true;
       }
@@ -181,33 +181,33 @@ public class Lamp {
     
     
   
-  //CT FUNCTIONS
+  //CT channels
   public void setCT(int ct){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==CT){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==CT){
         writeDmx(i, ct);
       }
     }
     if (failed) error("setCT");
   }
   public void adjustCT(int deltaCT){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==CT){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==CT){
          writeDmx(i, (currentValues[i]+deltaCT));
       }
     }
     if (failed) error("adjustCT");
   }
   public int getCT(){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==CT){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==CT){
         return currentValues[i];
       }
     }return 0;
   }
   public void tweenCT(int ct, int time){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==CT){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==CT){
         setTween(i, ct, time);
       }
     }
@@ -239,11 +239,11 @@ public class Lamp {
     int cWarm = 0;
     int cCool = 0;
     
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==WARM){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==WARM){
         cWarm = currentValues[i];
       }
-      if(functions[i]==COOL){
+      if(channels[i]==COOL){
         cCool = currentValues[i];
       }
     }
@@ -255,31 +255,31 @@ public class Lamp {
   
   //warm
   public void setWarm(int w){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==WARM){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==WARM){
         writeDmx(i, w);
       }
     }
     if (failed) error("setWarm");
   }
   public void adjustWarm(int deltaW){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==WARM){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==WARM){
          writeDmx(i, (currentValues[i]+deltaW));
       }
     }
     if (failed) error("adjustWarm");
   }
   public int getWarm(){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==WARM){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==WARM){
         return currentValues[i];
       }
     }return 0;
   }
   public void tweenWarm(int w, int time){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==WARM){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==WARM){
         setTween(i, w, time);
       }
     }
@@ -287,71 +287,71 @@ public class Lamp {
   
   //cool
   public void setCool(int c){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
         writeDmx(i, c);
       }
     }
     if (failed) error("setCool");
   }
   public void adjustCool(int deltaC){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
          writeDmx(i, (currentValues[i]+deltaC));
       }
     }
     if (failed) error("adjustCool");
   }
   public int getCool(){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
         return currentValues[i];
       }
     }return 0;
   }
   public void tweenCool(int c, int time){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==COOL){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==COOL){
         setTween(i, c, time);
       }
     }
   }
   
   
-  //STROBE FUNCTIONS
+  //STROBE channels
   public void setStrobe(int s){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==STROBE){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==STROBE){
         writeDmx(i, s);
       }
     }
     if (failed) error("setStrobe");
   }
   public void adjustStrobe(int deltaS){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==STROBE){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==STROBE){
          writeDmx(i, (currentValues[i]+deltaS));
       }
     }
     if (failed) error("adjustStrobe");
   }
   public int getStrobe(){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==STROBE){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==STROBE){
         return currentValues[i];
       }
     }return 0;
   }
   public void tweenStrobe(int s, int time){
-    for(int i=0; i<functions.length; i++){
-      if(functions[i]==STROBE){
+    for(int i=0; i<channels.length; i++){
+      if(channels[i]==STROBE){
         setTween(i, s, time);
       }
     }
   }
   public void strobeOff(boolean sO){
-      for(int i=0; i<functions.length; i++){
-        if(functions[i]==STROBE){
+      for(int i=0; i<channels.length; i++){
+        if(channels[i]==STROBE){
           if(sO){
             writeDontSaveDmx(i, 0);
           }else{
@@ -392,7 +392,7 @@ public class Lamp {
     }
   }
   
-  //update all tween & breath functions 
+  //update all tween & breath channels 
   public void update(){ 
     //only update if not in blackout mode
     if(blackout == false){
@@ -422,6 +422,8 @@ public class Lamp {
       }
     }
   }
+
+  // code to draw the lamp on the canvas of processing
 
   
   //write to the DMX and save the value

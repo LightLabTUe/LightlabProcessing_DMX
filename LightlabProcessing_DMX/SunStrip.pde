@@ -8,9 +8,9 @@ public class SunStrip extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 10){
-      functions = new int[10];
-      for(int i=0; i<functions.length; i++){
-        functions[i] = BRIGHTNESS;
+      channels = new int[10];
+      for(int i=0; i<channels.length; i++){
+        channels[i] = BRIGHTNESS;
       }
       currentValues = new int[10];
       tweeningToValue = new int[10];
@@ -27,7 +27,7 @@ public class SunStrip extends Lamp{
     }
   }
   
-  //write different animation functions for the SunStrips
+  //write different animation channels for the SunStrips
   public void chase(int speed){ 
 
   }
@@ -37,27 +37,27 @@ public class SunStrip extends Lamp{
   //brightness per lamp if a lamp index is send along. 
   //If no index is send, brightness is adjusted for all lamps in the sunstrip equally (see Lamp)
   public void setBrightness(int bri, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       writeDmx(index, bri);
     }
   }
   public void adjustBrightness(int deltaBri, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
        writeDmx(index, (currentValues[index]+deltaBri));
     }
   }
   public int getBrightness(int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       return currentValues[index];
     }return 0;
   }
   public void tweenBrightness(int bri, int time, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       setTween(index, bri, time);
     }
   }
   public void startBreathing(int min, int max, int time, int index){
-    if(functions[index]==BRIGHTNESS){
+    if(channels[index]==BRIGHTNESS){
       minBreathingValue[index] = min;
       maxBreathingValue[index] = max;
       breathingDelta[index] = time/(max - min);

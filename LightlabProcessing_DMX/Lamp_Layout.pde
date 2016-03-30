@@ -12,6 +12,21 @@ final int PANNING = 10;
 final int TILTING = 11;
 final int COLORS = 12;
 
+String[] channelNames = new String[] {
+"BRIGHTNESS",
+"RED",
+"GREEN",
+"BLUE",
+"COOL",
+"WARM",
+"STROBE",
+"MACRO",
+"CT",
+"PANNING",
+"TILTING",
+"COLORS"
+};
+
 //initialize all lamp ArrayLists
 ArrayList<RGBSpot> rgbSpots = new ArrayList<RGBSpot>();
 ArrayList<CTSpot> ctSpots = new ArrayList<CTSpot>();

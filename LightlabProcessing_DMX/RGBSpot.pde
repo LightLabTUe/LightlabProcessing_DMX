@@ -8,11 +8,11 @@ public class RGBSpot extends Lamp{
     
     //for now only the four channel mode is defined
     if(nrOfChannels == 4){
-      functions = new int[4];
-      functions[0] = BRIGHTNESS;
-      functions[1] = RED;
-      functions[2] = GREEN;
-      functions[3] = BLUE;
+      channels = new int[4];
+      channels[0] = BRIGHTNESS;
+      channels[1] = RED;
+      channels[2] = GREEN;
+      channels[3] = BLUE;
       
       currentValues = new int[4];
       tweeningToValue = new int[4];
