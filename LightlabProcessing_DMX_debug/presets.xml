@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Presets>
+  <preset id="6" name="alles2">
+    <RGBSpot name="RGBSPOT01">
+      <currentValues>
+        <cv index="0" value="103"/>
+        <cv index="1" value="239"/>
+        <cv index="2" value="81"/>
+        <cv index="3" value="161"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT11">
+      <currentValues>
+        <cv index="0" value="251"/>
+        <cv index="1" value="16"/>
+        <cv index="2" value="155"/>
+        <cv index="3" value="41"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT21">
+      <currentValues>
+        <cv index="0" value="172"/>
+        <cv index="1" value="231"/>
+        <cv index="2" value="36"/>
+        <cv index="3" value="93"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT31">
+      <currentValues>
+        <cv index="0" value="78"/>
+        <cv index="1" value="83"/>
+        <cv index="2" value="85"/>
+        <cv index="3" value="223"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT41">
+      <currentValues>
+        <cv index="0" value="51"/>
+        <cv index="1" value="6"/>
+        <cv index="2" value="95"/>
+        <cv index="3" value="20"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT51">
+      <currentValues>
+        <cv index="0" value="119"/>
+        <cv index="1" value="125"/>
+        <cv index="2" value="235"/>
+        <cv index="3" value="54"/>
+      </currentValues>
+    </RGBSpot>
+    <CTSpot name="CTSPOT01">
+      <currentValues>
+        <cv index="0" value="21"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT11">
+      <currentValues>
+        <cv index="0" value="48"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT21">
+      <currentValues>
+        <cv index="0" value="23"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT31">
+      <currentValues>
+        <cv index="0" value="75"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <Cameleon name="CAMELEON01">
+      <currentValues>
+        <cv index="0" value="187"/>
+        <cv index="1" value="94"/>
+        <cv index="2" value="106"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON11">
+      <currentValues>
+        <cv index="0" value="213"/>
+        <cv index="1" value="181"/>
+        <cv index="2" value="199"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON21">
+      <currentValues>
+        <cv index="0" value="93"/>
+        <cv index="1" value="107"/>
+        <cv index="2" value="146"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON31">
+      <currentValues>
+        <cv index="0" value="231"/>
+        <cv index="1" value="96"/>
+        <cv index="2" value="226"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <CTLEDWash name="CTLEDWASH01">
+      <currentValues>
+        <cv index="0" value="44"/>
+        <cv index="1" value="237"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH11">
+      <currentValues>
+        <cv index="0" value="153"/>
+        <cv index="1" value="68"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH21">
+      <currentValues>
+        <cv index="0" value="74"/>
+        <cv index="1" value="160"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH31">
+      <currentValues>
+        <cv index="0" value="140"/>
+        <cv index="1" value="211"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH41">
+      <currentValues>
+        <cv index="0" value="26"/>
+        <cv index="1" value="10"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH51">
+      <currentValues>
+        <cv index="0" value="112"/>
+        <cv index="1" value="241"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <SunStrip name="SUNSTRIP01">
+      <currentValues>
+        <cv index="0" value="50"/>
+        <cv index="1" value="20"/>
+        <cv index="2" value="173"/>
+        <cv index="3" value="153"/>
+        <cv index="4" value="245"/>
+        <cv index="5" value="233"/>
+        <cv index="6" value="229"/>
+        <cv index="7" value="84"/>
+        <cv index="8" value="233"/>
+        <cv index="9" value="32"/>
+      </currentValues>
+    </SunStrip>
+    <SunStrip name="SUNSTRIP11">
+      <currentValues>
+        <cv index="0" value="184"/>
+        <cv index="1" value="130"/>
+        <cv index="2" value="219"/>
+        <cv index="3" value="195"/>
+        <cv index="4" value="216"/>
+        <cv index="5" value="75"/>
+        <cv index="6" value="116"/>
+        <cv index="7" value="118"/>
+        <cv index="8" value="34"/>
+        <cv index="9" value="201"/>
+      </currentValues>
+    </SunStrip>
+    <NarrowSpot name="SNARROWSPOT01">
+      <currentValues>
+        <cv index="0" value="163"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </NarrowSpot>
+    <Strobe name="STROBE01">
+      <currentValues>
+        <cv index="0" value="197"/>
+        <cv index="1" value="197"/>
+        <cv index="2" value="197"/>
+        <cv index="3" value="197"/>
+        <cv index="4" value="197"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </Strobe>
+    <MovingHead name="MOVINGHEAD01">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+        <cv index="10" value="0"/>
+        <cv index="11" value="0"/>
+        <cv index="12" value="0"/>
+      </currentValues>
+    </MovingHead>
+    <MovingHead name="MOVINGHEAD11">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+        <cv index="10" value="0"/>
+        <cv index="11" value="0"/>
+        <cv index="12" value="0"/>
+      </currentValues>
+    </MovingHead>
+  </preset>
+  <preset id="7" name="nog een!">
+    <RGBSpot name="RGBSPOT01">
+      <currentValues>
+        <cv index="0" value="50"/>
+        <cv index="1" value="223"/>
+        <cv index="2" value="91"/>
+        <cv index="3" value="3"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT11">
+      <currentValues>
+        <cv index="0" value="199"/>
+        <cv index="1" value="22"/>
+        <cv index="2" value="95"/>
+        <cv index="3" value="91"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT21">
+      <currentValues>
+        <cv index="0" value="153"/>
+        <cv index="1" value="4"/>
+        <cv index="2" value="15"/>
+        <cv index="3" value="64"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT31">
+      <currentValues>
+        <cv index="0" value="189"/>
+        <cv index="1" value="240"/>
+        <cv index="2" value="171"/>
+        <cv index="3" value="141"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT41">
+      <currentValues>
+        <cv index="0" value="120"/>
+        <cv index="1" value="117"/>
+        <cv index="2" value="62"/>
+        <cv index="3" value="243"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT51">
+      <currentValues>
+        <cv index="0" value="166"/>
+        <cv index="1" value="140"/>
+        <cv index="2" value="120"/>
+        <cv index="3" value="239"/>
+      </currentValues>
+    </RGBSpot>
+    <CTSpot name="CTSPOT01">
+      <currentValues>
+        <cv index="0" value="61"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT11">
+      <currentValues>
+        <cv index="0" value="150"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT21">
+      <currentValues>
+        <cv index="0" value="102"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT31">
+      <currentValues>
+        <cv index="0" value="124"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <Cameleon name="CAMELEON01">
+      <currentValues>
+        <cv index="0" value="14"/>
+        <cv index="1" value="27"/>
+        <cv index="2" value="42"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON11">
+      <currentValues>
+        <cv index="0" value="103"/>
+        <cv index="1" value="209"/>
+        <cv index="2" value="131"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON21">
+      <currentValues>
+        <cv index="0" value="187"/>
+        <cv index="1" value="173"/>
+        <cv index="2" value="130"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON31">
+      <currentValues>
+        <cv index="0" value="126"/>
+        <cv index="1" value="114"/>
+        <cv index="2" value="19"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <CTLEDWash name="CTLEDWASH01">
+      <currentValues>
+        <cv index="0" value="56"/>
+        <cv index="1" value="238"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH11">
+      <currentValues>
+        <cv index="0" value="7"/>
+        <cv index="1" value="164"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH21">
+      <currentValues>
+        <cv index="0" value="36"/>
+        <cv index="1" value="156"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH31">
+      <currentValues>
+        <cv index="0" value="254"/>
+        <cv index="1" value="4"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH41">
+      <currentValues>
+        <cv index="0" value="122"/>
+        <cv index="1" value="19"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH51">
+      <currentValues>
+        <cv index="0" value="162"/>
+        <cv index="1" value="199"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <SunStrip name="SUNSTRIP01">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="245"/>
+        <cv index="2" value="156"/>
+        <cv index="3" value="102"/>
+        <cv index="4" value="156"/>
+        <cv index="5" value="98"/>
+        <cv index="6" value="69"/>
+        <cv index="7" value="14"/>
+        <cv index="8" value="34"/>
+        <cv index="9" value="139"/>
+      </currentValues>
+    </SunStrip>
+    <SunStrip name="SUNSTRIP11">
+      <currentValues>
+        <cv index="0" value="135"/>
+        <cv index="1" value="51"/>
+        <cv index="2" value="121"/>
+        <cv index="3" value="141"/>
+        <cv index="4" value="104"/>
+        <cv index="5" value="27"/>
+        <cv index="6" value="47"/>
+        <cv index="7" value="239"/>
+        <cv index="8" value="172"/>
+        <cv index="9" value="104"/>
+      </currentValues>
+    </SunStrip>
+    <NarrowSpot name="SNARROWSPOT01">
+      <currentValues>
+        <cv index="0" value="210"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </NarrowSpot>
+    <Strobe name="STROBE01">
+      <currentValues>
+        <cv index="0" value="197"/>
+        <cv index="1" value="197"/>
+        <cv index="2" value="197"/>
+        <cv index="3" value="197"/>
+        <cv index="4" value="197"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </Strobe>
+    <MovingHead name="MOVINGHEAD01">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+        <cv index="10" value="0"/>
+        <cv index="11" value="0"/>
+        <cv index="12" value="0"/>
+      </currentValues>
+    </MovingHead>
+    <MovingHead name="MOVINGHEAD11">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+        <cv index="10" value="0"/>
+        <cv index="11" value="0"/>
+        <cv index="12" value="0"/>
+      </currentValues>
+    </MovingHead>
+  </preset>
+  <preset id="0" name="h">
+    <RGBSpot name="RGBSPOT01">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="255"/>
+        <cv index="2" value="17"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT11">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="255"/>
+        <cv index="2" value="17"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT21">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="255"/>
+        <cv index="2" value="17"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT31">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="255"/>
+        <cv index="2" value="17"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT41">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="255"/>
+        <cv index="2" value="17"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </RGBSpot>
+    <RGBSpot name="RGBSPOT51">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="255"/>
+        <cv index="2" value="17"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </RGBSpot>
+    <CTSpot name="CTSPOT01">
+      <currentValues>
+        <cv index="0" value="-616"/>
+        <cv index="1" value="616"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT11">
+      <currentValues>
+        <cv index="0" value="-616"/>
+        <cv index="1" value="616"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT21">
+      <currentValues>
+        <cv index="0" value="-616"/>
+        <cv index="1" value="616"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <CTSpot name="CTSPOT31">
+      <currentValues>
+        <cv index="0" value="-616"/>
+        <cv index="1" value="616"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </CTSpot>
+    <Cameleon name="CAMELEON01">
+      <currentValues>
+        <cv index="0" value="255"/>
+        <cv index="1" value="17"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="255"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON11">
+      <currentValues>
+        <cv index="0" value="255"/>
+        <cv index="1" value="17"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="255"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON21">
+      <currentValues>
+        <cv index="0" value="255"/>
+        <cv index="1" value="17"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="255"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <Cameleon name="CAMELEON31">
+      <currentValues>
+        <cv index="0" value="255"/>
+        <cv index="1" value="17"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="255"/>
+        <cv index="4" value="0"/>
+      </currentValues>
+    </Cameleon>
+    <CTLEDWash name="CTLEDWASH01">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="-616"/>
+        <cv index="2" value="616"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH11">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="-616"/>
+        <cv index="2" value="616"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH21">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="-616"/>
+        <cv index="2" value="616"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH31">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="-616"/>
+        <cv index="2" value="616"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH41">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="-616"/>
+        <cv index="2" value="616"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <CTLEDWash name="CTLEDWASH51">
+      <currentValues>
+        <cv index="0" value="200"/>
+        <cv index="1" value="-616"/>
+        <cv index="2" value="616"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </CTLEDWash>
+    <SunStrip name="SUNSTRIP01">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+      </currentValues>
+    </SunStrip>
+    <SunStrip name="SUNSTRIP11">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+      </currentValues>
+    </SunStrip>
+    <NarrowSpot name="SNARROWSPOT01">
+      <currentValues>
+        <cv index="0" value="255"/>
+        <cv index="1" value="7"/>
+        <cv index="2" value="5"/>
+        <cv index="3" value="0"/>
+      </currentValues>
+    </NarrowSpot>
+    <Strobe name="STROBE01">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+      </currentValues>
+    </Strobe>
+    <MovingHead name="MOVINGHEAD01">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+        <cv index="10" value="0"/>
+        <cv index="11" value="0"/>
+        <cv index="12" value="0"/>
+      </currentValues>
+    </MovingHead>
+    <MovingHead name="MOVINGHEAD11">
+      <currentValues>
+        <cv index="0" value="0"/>
+        <cv index="1" value="0"/>
+        <cv index="2" value="0"/>
+        <cv index="3" value="0"/>
+        <cv index="4" value="0"/>
+        <cv index="5" value="0"/>
+        <cv index="6" value="0"/>
+        <cv index="7" value="0"/>
+        <cv index="8" value="0"/>
+        <cv index="9" value="0"/>
+        <cv index="10" value="0"/>
+        <cv index="11" value="0"/>
+        <cv index="12" value="0"/>
+      </currentValues>
+    </MovingHead>
+  </preset>
+</Presets>
