@@ -1,7 +1,6 @@
-//EDITED: MovingHead + Lamp_Layout + narrowSpot
-
 /**
- * This code works with the Arduino Lightlab_Arduino sketch. Please upload the Arduino code first
+ * This code works with the Arduino DmxSimple SerialToDmxLightlab sketch. Please upload the Arduino code to the Arduino first. 
+ * Make sure the arduino is connected to the Dmx cable by using a DMX shield and to your PC. 
  * This program is based upon the layout of the lightlab (LP-1.18) as of july 2015.
  * If lamps use different channels than expected, it could be that this sketch is dated, and that the layout of the lightlab has been changed
  *
